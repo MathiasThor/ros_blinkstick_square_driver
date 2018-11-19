@@ -1,0 +1,9 @@
+<launch>
+<group ns="morf_hw">
+    <arg name="frame_id" default="/blinkstick_square"/>
+
+    <node pkg="ros_blinkstick_square_driver" type="blinkstick_square_node.py" name="blinkstick_square_driver" output="screen" >
+        <param name="frame_id" value="$(arg frame_id)"/>
+    </node>
+</group>
+</launch>
