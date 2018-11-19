@@ -1,1 +1,1 @@
-# blinkstick_ros_driver
+# ros_blinkstick_square_driver
