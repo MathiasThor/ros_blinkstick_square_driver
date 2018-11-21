@@ -21,7 +21,7 @@ class blinkstickDriver(object):
 	rospy.Subscriber("set_all_led", ColorRGBA, self.set_all)
         rospy.Subscriber("set_single_led", ColorRGBA, self.set_single)
 
-	self.bstick.set_color(channel=0, name="red")
+	self.bstick.morph(channel=0, index=0, red=data.0, green=data.40, blue=data.0)
 
     def set_all(self,data):
 	self.bstick.morph(channel=0, index=0, red=data.r, green=data.g, blue=data.b)
